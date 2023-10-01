@@ -1,5 +1,6 @@
-import React from 'react'
+import React from 'react';
 import '../styles/App.css';
+
 const TypesOfFruit = () => {
   return (
     <div id="typesOfFruits">
@@ -10,6 +11,8 @@ const TypesOfFruit = () => {
         <li>Strawberries</li>
         <li>Bananas</li>
       </ul>
+      {/* Print the Fruits component inside TypesOfFruit */}
+      <Fruits />
     </div>
   );
 };
@@ -17,23 +20,21 @@ const TypesOfFruit = () => {
 const Fruits = () => {
   return (
     <div id="fruits">
-      { /* Change code below this line */ }
-
-      { /* Change code above this line */ }
+      {/* Print the TypesOfFruit component inside Fruits */}
+      <TypesOfFruit />
     </div>
   );
 };
-const App = () => {
 
+const App = () => {
   return (
     <div id="main">
       <h1>Types of Food:</h1>
-      { /* Change code below this line */ }
-
-      { /* Change code above this line */ }
+      {/* Print the TypesOfFruit and Fruits components inside App */}
+      <TypesOfFruit />
+      <Fruits />
     </div>
-  )
-}
-
+  );
+};
 
 export default App;
